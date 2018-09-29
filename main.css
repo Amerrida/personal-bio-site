@@ -1,8 +1,29 @@
-body{
-    background-color: skyblue;
+body {
+    background-color:slateblue;
+    font-variant: small-caps
 }
 
-.page-footer{
+.techTitle {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+
+#projectsPage {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 50px;  
+    background-color: rgb(76, 179, 219)
     
-
 }
+
+#cards img {
+    background-color: yellow;
+    padding: 10px;
+}
+
