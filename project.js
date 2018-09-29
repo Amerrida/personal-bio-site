@@ -1,61 +1,64 @@
-let projects = [
-    {
-        title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-        description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
-        technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-        available: true,
-        url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-        githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
-      },
-
-      {
-        title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-        description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
-        technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-        available: true,
-        url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-        githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
-    } ,
-
-    {
-        title: "Cool Project", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-        description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
-        technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-        available: false,
-        url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-        githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
-}
-
-
-]
-console.log (projects)
-
-const printToDom = (stringToPrint, divId) => {
+let projects = [{
+    title: "Something Cool is Coming!",
+    screenshot: "https://images.pexels.com/photos/4956/fashion-person-woman-hand.jpg?auto=compress&cs=tinysrgb&h=350",
+    description: "Short description", // A good project description includes 'the what', 'the why', and 'the how'.
+    technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github ",
+    available: true,
+    url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
+    githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+  },
+  {
+    title: "Hogwarts",
+    screenshot: "data:image/jpeg;base64,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",
+    description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+    technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    available: true,
+    url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
+    githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+  },
+  {
+    title: "Cool Project",
+    screenshot: "https://icelandmag.is/sites/default/files/styles/lightbox/public/thumbnails/image/einhverstadar_a_vesturlandi_-_gva.jpg?itok=oujJDhp3",
+    description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+    technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github ",
+    available: false,
+    url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
+    githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+  },
+  {
+    title: "the cool Project",
+    screenshot: "http://gotoflashgames.com/files/file/033.jpg",
+    description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+    technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github ",
+    available: false,
+    url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
+    githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+  }
+  ];
+  
+  const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML += stringToPrint;
+    selectedDiv.innerHTML = stringToPrint;
   };
-
-  const projectsCard =() => {
-      let newprojects = '';
-      for(let i=0; i<projects.length; i++){
-          newprojects += `<div>`;
-          newprojects += `<h3> ${projects[i].title} </h3>`;
-          newprojects += `<h3> ${projects[i].screenshot} </h3>`;
-          newprojects += `<h3> ${projects[i].description} </h3>`;
-          newprojects += `<h3> ${projects[i].technologiesUsed} </h3>`;
-          newprojects += `<h3> ${projects[i].available} </h3>`;
-          newprojects += `<h3> ${projects[i].url} </h3>`;
-          newprojects += `<h3> ${projects[i].githubUrl} </h3>`;
-          if (projects[i].available === true) {
-            printToDom(newprojects, 'projectsPage');
-          }
-      
-    };
-    createProjectCards();
-
-};
-
-projectsCard();
+  
+  const createProjectCards = () => {
+    let newProject = '';
+    for (i = 0; i < projects.length; i++) {
+      newProject += `<div id='cards'>`;
+      newProject += `<h2>${projects[i].title}</h2>`;
+      newProject += `<img src='${projects[i].screenshot}'></img>`;
+      newProject += `<div class="content"><p>${projects[i].description}</p>`;
+      newProject += `<p>${projects[i].technologiesUsed}</p>`;
+      newProject += `<p>${projects[i].available}</p>`;
+      newProject += `<p>${projects[i].url}</p>`;
+      newProject += `<p>${projects[i].githubUrl}</p></div>`;
+      newProject += `</div>`;
+      if (projects[i].available === true) {
+        printToDom(newProject, 'projectsPage');
+      }
+    }
+  };
+  createProjectCards();
+  
+  
+  
