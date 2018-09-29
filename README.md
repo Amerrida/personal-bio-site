@@ -4,7 +4,7 @@ This will be my Personal Site.This site is a single page application.
  More will be at a later date.
 
 ## Screenshots
-![main screenshot](image/PersonalPage.png)
+![main screenshot](Image/PersonalPage.png)
 
 ## How to run this project
 
